@@ -1,0 +1,43 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"VisitOccurrence": {
+      "OccurrenceEndDate": null,
+      "VisitLength": null,
+      "CorrelatedCriteria": null,
+      "VisitSourceConcept": null,
+      "CodesetId": null,
+      "VisitTypeExclude": false,
+      "ProviderSpecialty": null,
+      "Gender": null,
+      "PlaceOfServiceLocation": null,
+      "PlaceOfService": null,
+      "VisitType": null,
+      "First": null,
+      "OccurrenceStartDate": {
+        "Op": "gte",
+        "Extent": null,
+        "Value": "2016-01-01"
+      },
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 365
+    }
+  }
+}

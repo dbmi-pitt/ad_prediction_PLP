@@ -1,0 +1,294 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 378419,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "26929004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Alzheimer's disease",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4182210,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "52448006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Dementia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 43530666,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "1591000119103",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Dementia with behavioral disturbance",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 378125,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "12348006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Presenile dementia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 381832,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "191452002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Presenile dementia with delirium",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 44782771,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "31081000119101",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Presenile dementia with delusions",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 377527,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "191455000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Presenile dementia with depression",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4218017,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "416780008",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Primary degenerative dementia of the Alzheimer type, presenile onset",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4220313,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "416975007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Primary degenerative dementia of the Alzheimer type, senile onset",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 376946,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "191461002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Senile dementia with delirium",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 380986,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "371024007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Senile dementia with delusion",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 379784,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "191459006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Senile dementia with depression",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 376085,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "191451009",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Uncomplicated presenile dementia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 375791,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "191449005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Uncomplicated senile dementia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      }
+    ]},
+    "name": "Alzheimer's Disease - Momentum",
+    "id": 0
+  }],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [{"Death": {
+    "CorrelatedCriteria": null,
+    "CodesetId": null,
+    "DeathSourceConcept": null,
+    "DeathTypeExclude": false,
+    "DeathType": null,
+    "OccurrenceStartDate": null,
+    "Gender": null,
+    "Age": null
+  }}],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "OccurrenceEndDate": null,
+      "CorrelatedCriteria": null,
+      "ConditionTypeExclude": false,
+      "CodesetId": 0,
+      "ProviderSpecialty": null,
+      "Gender": null,
+      "VisitType": null,
+      "First": null,
+      "OccurrenceStartDate": {
+        "Op": "gte",
+        "Extent": null,
+        "Value": "2016-01-01"
+      },
+      "ConditionType": null,
+      "ConditionSourceConcept": null,
+      "StopReason": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

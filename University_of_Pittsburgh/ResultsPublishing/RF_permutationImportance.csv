@@ -1,0 +1,178 @@
+"NOTE: since condition_era often repeated condition_occurrence and condition_occurrence group, the summary below removes the duplications"
+
+drug_exposure: DTP-Haemophilus influenzae type b conjugate vaccine
+"drug_exposure: Seasonal trivalent influenza vaccine, adjuvanted, preservative free"
+"drug_exposure: cholera, BivWC"
+"drug_exposure: immune globulin, unspecified formulation"
+"drug_exposure: influenza virus vaccine, unspecified formulation"
+
+
+age :  55 -  59
+age :  60 -  64
+age :  65 -  69
+age :  70 -  74
+age :  75 -  79
+age :  85 -  89
+age :  90 -  94
+age :  95 -  99
+age : 100 - 104
+age in years
+ethnicity = Not Hispanic or Latino
+gender = MALE
+race = Black or African American
+race = Unknown
+
+
+
+Accidental collision with stationary object
+Altered sensation of skin
+Aneurysm of artery of trunk
+Aneurysm of peripheral artery
+Apnea
+Arterial aneurysm
+Arthropathy
+Backache
+Cataract
+Closed wound
+Colonic lesion
+Complication associated with device
+Contusion
+Coronary arteriosclerosis
+Cough
+Diabetes mellitus
+Disorder of bone
+Disorder of lung
+Disorder of soft tissue
+Distention of artery
+Distention of blood vessel
+Diverticular disease
+Diverticulosis of colon
+"Ear, nose and throat disorder"
+Essential hypertension
+Fall
+Finding related to sleep
+Head and neck injury
+Heart disease
+Hyperlipidemia
+Hypertensive disorder
+Impaired cognition
+Increased lipid
+Infectious disease of lung
+Infective pneumonia
+Inflammation of specific body organs
+Inflammation of specific body systems
+Inflammatory disorder
+Inflammatory disorder of head
+Inflammatory disorder of the respiratory system
+Inflammatory disorder of the respiratory tract
+Inflammatory neuropathy
+Injury of head
+Lipids abnormal
+Lower respiratory tract infection
+Lung consolidation
+Mammography
+Mass of trunk
+Measurement finding above reference range
+Measurement finding outside reference range
+Mononeuropathy
+Mood disorder
+Neuropathy
+Open wound
+Open wound of head
+Organic mental disorder
+Pain
+Pain finding at anatomical site
+Pain in limb
+Pain of truncal structure
+Peripheral nerve disease
+Peripheral neuritis
+Pneumonia
+Pneumonitis
+Psychotic disorder
+Seizure
+Sinusitis
+Skin finding
+Sleep apnea
+Sleep disorder
+Soft tissue lesion
+Structural disorder of heart
+Traumatic injury
+Type 2 diabetes mellitus
+Vascular disorder
+Vehicle accident
+Victim of vehicular AND/OR traffic accident
+Victim status
+Visual system disorder
+
+"drug_era : ACE INHIBITORS, COMBINATIONS"
+drug_era : AGENTS AGAINST AMOEBIASIS AND OTHER PROTOZOAL DISEASES
+drug_era : AGENTS FOR TREATMENT OF HEMORRHOIDS AND ANAL FISSURES FOR TOPICAL USE
+drug_era : ALIMENTARY TRACT AND METABOLISM
+drug_era : ANALGESICS
+drug_era : ANESTHETICS
+"drug_era : ANESTHETICS, GENERAL"
+drug_era : ANTIEMETICS AND ANTINAUSEANTS
+"drug_era : ANTIINFLAMMATORY AND ANTIRHEUMATIC PRODUCTS, NON-STEROIDS"
+drug_era : ANTISPASMODICS IN COMBINATION WITH ANALGESICS
+drug_era : Acetic acid derivatives and related substances
+"drug_era : Adrenergics in combination with corticosteroids or other drugs, excl. anticholinergics"
+drug_era : Analgesics and anesthetics
+drug_era : BETA BLOCKING AGENTS AND OTHER DIURETICS
+drug_era : BLOOD AND BLOOD FORMING ORGANS
+drug_era : Belladonna and derivatives in combination with analgesics
+drug_era : CARDIOVASCULAR SYSTEM
+drug_era : CORTICOSTEROIDS AND ANTIINFECTIVES IN COMBINATION
+"drug_era : COUGH SUPPRESSANTS AND EXPECTORANTS, COMBINATIONS"
+drug_era : Corticosteroids and antiinfectives in combination
+drug_era : DRUGS FOR PEPTIC ULCER AND GASTRO-OESOPHAGEAL REFLUX DISEASE (GORD)
+drug_era : HYPNOTICS AND SEDATIVES
+"drug_era : Hypnotics and sedatives in combination, excl. barbiturates"
+drug_era : NERVOUS SYSTEM
+drug_era : Nicotinic acid and derivatives
+drug_era : OPIOIDS
+drug_era : OTHER ANALGESICS AND ANTIPYRETICS
+drug_era : OTHER OTOLOGICALS
+drug_era : OTOLOGICALS
+drug_era : Opioids in combination with non-opioid analgesics
+drug_era : Opium derivatives and expectorants
+drug_era : Other agents against amoebiasis and other protozoal diseases
+drug_era : Other agents for treatment of hemorrhoids and anal fissures for topical use
+drug_era : Other cough suppressants and expectorants
+"drug_era : Oxazol, thiazine, and triazine derivatives"
+drug_era : RESPIRATORY SYSTEM
+drug_era : SENSORY ORGANS
+drug_era : Salicylic acid and derivatives
+drug_era : Synthetic anticholinergic agents in combination with analgesics
+"drug_era : Thiazides, combinations with other drugs"
+drug_era : VITAMIN B12 AND FOLIC ACID
+drug_era : Vitamin B12 (cyanocobalamin and analogues)
+
+
+measurement value: Body height (inch (US))
+measurement value: Body weight (pound (US))
+measurement value: Body weight Measured (pound (US))
+measurement: Body height
+measurement: Body mass index (BMI) [Ratio]
+measurement: Body weight
+measurement: Body weight Measured
+measurement: Diastolic blood pressure
+measurement: Heart rate
+measurement: Systolic blood pressure
+
+CHADS2
+CHADS2VASc
+Charlson index - Romano adaptation
+Diabetes Comorbidity Severity Index (DCSI)
+
+observation: Average diastolic blood pressure
+observation: Average systolic blood pressure
+observation: History of clinical finding in subject
+observation: Median BMI Yearly
+
+"procedure_occurrence: Colonoscopy, flexible; diagnostic, including collection of specimen(s) by brushing or washing, when performed (separate procedure)"
+"procedure_occurrence: Emergency department visit for the evaluation and management of a patient, which requires these 3 key components: A detailed history; A detailed examination; and Medical decision making of moderate complexity. Counseling and/or coordination of care with o"
+"procedure_occurrence: Emergency department visit for the evaluation and management of a patient, which requires these 3 key components: An expanded problem focused history; An expanded problem focused examination; and Medical decision making of moderate complexity. Counseling "
+procedure_occurrence: Mammography; bilateral (Deprecated)
+procedure_occurrence: Neuroplasty and/or transposition; median nerve at carpal tunnel
+"procedure_occurrence: Screening mammography, bilateral (two view film study of each breast) (Deprecated)"
+procedure_occurrence: Unlisted diagnostic radiographic procedure

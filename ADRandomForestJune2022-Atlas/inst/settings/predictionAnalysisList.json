@@ -1,0 +1,546 @@
+{
+  "getPlpDataArgs": {
+    "maxSampleSize": null,
+    "washoutPeriod": 0
+  },
+  "skeletonType": "PatientLevelPredictionStudy",
+  "populationSettings": [{
+    "minTimeAtRisk": 0,
+    "requireTimeAtRisk": true,
+    "addExposureDaysToStart": false,
+    "riskWindowStart": 0,
+    "washoutPeriod": 0,
+    "attr_class": "populationSettings",
+    "addExposureDaysToEnd": false,
+    "includeAllOutcomes": true,
+    "priorOutcomeLookback": 99999,
+    "binary": true,
+    "removeSubjectsWithPriorOutcome": true,
+    "riskWindowEnd": 2190,
+    "firstExposureOnly": true
+  }],
+  "organizationName": "OHDSI",
+  "targetIds": [21],
+  "runPlpArgs": {
+    "nfold": 5,
+    "minCovariateFraction": 0.001,
+    "splitSeed": 42,
+    "testSplit": "person",
+    "testFraction": 0.25,
+    "normalizeData": true
+  },
+  "description": "Random Forest analysis for predicting AD diagnosis 2016 and after.",
+  "version": "v2.7.0",
+  "outcomeIds": [33],
+  "skeletonVersion": "v0.0.1",
+  "createdDate": null,
+  "conceptSetCrossReference": [],
+  "createdBy": null,
+  "cohortDefinitions": [
+    {
+      "expression": {
+        "ExpressionLimit": {"Type": "First"},
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {
+          "StartDate": null,
+          "EndDate": null
+        },
+        "ConceptSets": [{
+          "expression": {"items": [
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 378419,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "26929004",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Alzheimer's disease",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 4182210,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "52448006",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Dementia",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 43530666,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "1591000119103",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Dementia with behavioral disturbance",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 378125,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "12348006",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Presenile dementia",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 381832,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "191452002",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Presenile dementia with delirium",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 44782771,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "31081000119101",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Presenile dementia with delusions",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 377527,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "191455000",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Presenile dementia with depression",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 4218017,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "416780008",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Primary degenerative dementia of the Alzheimer type, presenile onset",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 4220313,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "416975007",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Primary degenerative dementia of the Alzheimer type, senile onset",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 376946,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "191461002",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Senile dementia with delirium",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 380986,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "371024007",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Senile dementia with delusion",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 379784,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "191459006",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Senile dementia with depression",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 376085,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "191451009",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Uncomplicated presenile dementia",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            },
+            {
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 375791,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "191449005",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Uncomplicated senile dementia",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": false
+            }
+          ]},
+          "name": "Alzheimer's Disease - Momentum",
+          "id": 0
+        }],
+        "cdmVersionRange": ">=5.0.0",
+        "CensoringCriteria": [{"Death": {
+          "CorrelatedCriteria": null,
+          "CodesetId": null,
+          "DeathSourceConcept": null,
+          "DeathTypeExclude": false,
+          "DeathType": null,
+          "OccurrenceStartDate": null,
+          "Gender": null,
+          "Age": null
+        }}],
+        "QualifiedLimit": {"Type": "First"},
+        "InclusionRules": [],
+        "PrimaryCriteria": {
+          "CriteriaList": [{"ConditionOccurrence": {
+            "OccurrenceEndDate": null,
+            "CorrelatedCriteria": null,
+            "ConditionTypeExclude": false,
+            "CodesetId": 0,
+            "ProviderSpecialty": null,
+            "Gender": null,
+            "VisitType": null,
+            "First": null,
+            "OccurrenceStartDate": {
+              "Op": "gte",
+              "Extent": null,
+              "Value": "2016-01-01"
+            },
+            "ConditionType": null,
+            "ConditionSourceConcept": null,
+            "StopReason": null,
+            "Age": null
+          }}],
+          "PrimaryCriteriaLimit": {"Type": "First"},
+          "ObservationWindow": {
+            "PostDays": 0,
+            "PriorDays": 0
+          }
+        }
+      },
+      "createdDate": "2020-11-10T00:00:00.000+0000",
+      "createdBy": null,
+      "name": "AD_at_entry_cohort 2016 and after",
+      "modifiedDate": "2020-11-10T00:00:00.000+0000",
+      "description": "PLP method outcome cohort with index date 2016 and after",
+      "expressionType": "SIMPLE_EXPRESSION",
+      "modifiedBy": null,
+      "id": 33
+    },
+    {
+      "expression": {
+        "ExpressionLimit": {"Type": "First"},
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {
+          "StartDate": null,
+          "EndDate": null
+        },
+        "ConceptSets": [],
+        "cdmVersionRange": ">=5.0.0",
+        "CensoringCriteria": [],
+        "QualifiedLimit": {"Type": "First"},
+        "InclusionRules": [],
+        "PrimaryCriteria": {
+          "CriteriaList": [{"VisitOccurrence": {
+            "OccurrenceEndDate": null,
+            "VisitLength": null,
+            "CorrelatedCriteria": null,
+            "VisitSourceConcept": null,
+            "CodesetId": null,
+            "VisitTypeExclude": false,
+            "ProviderSpecialty": null,
+            "Gender": null,
+            "PlaceOfServiceLocation": null,
+            "PlaceOfService": null,
+            "VisitType": null,
+            "First": null,
+            "OccurrenceStartDate": {
+              "Op": "gte",
+              "Extent": null,
+              "Value": "2016-01-01"
+            },
+            "Age": null
+          }}],
+          "PrimaryCriteriaLimit": {"Type": "First"},
+          "ObservationWindow": {
+            "PostDays": 0,
+            "PriorDays": 365
+          }
+        }
+      },
+      "createdDate": "2020-09-09T00:00:00.000+0000",
+      "createdBy": null,
+      "name": "Simple visit 2016 and after",
+      "modifiedDate": "2020-09-09T00:00:00.000+0000",
+      "description": "Simple visit 2016 and after with at least one year prior observation - for table 1",
+      "expressionType": "SIMPLE_EXPRESSION",
+      "modifiedBy": null,
+      "id": 21
+    }
+  ],
+  "modelSettings": [{"RandomForestSettings": {
+    "maxDepth": [
+      4,
+      10,
+      17,
+      25,
+      50
+    ],
+    "varImp": [true],
+    "seed": null,
+    "mtries": [
+      -1,
+      5,
+      20,
+      100,
+      200
+    ],
+    "ntrees": [
+      500,
+      50,
+      100,
+      1000
+    ]
+  }}],
+  "name": "RandomForest-June2022",
+  "modifiedDate": null,
+  "covariateSettings": [{
+    "VisitCountMediumTerm": false,
+    "ObservationShortTerm": false,
+    "shortTermStartDays": -30,
+    "MeasurementRangeGroupShortTerm": false,
+    "ConditionOccurrenceLongTerm": true,
+    "DrugEraStartLongTerm": false,
+    "VisitCountShortTerm": false,
+    "Chads2Vasc": true,
+    "ConditionGroupEraStartLongTerm": false,
+    "ConditionEraShortTerm": false,
+    "Dcsi": true,
+    "DrugGroupEraLongTerm": true,
+    "DrugGroupEraShortTerm": false,
+    "ConditionEraStartLongTerm": false,
+    "temporal": false,
+    "DemographicsIndexMonth": false,
+    "ConditionOccurrencePrimaryInpatientLongTerm": false,
+    "ConditionEraAnyTimePrior": false,
+    "addDescendantsToInclude": false,
+    "ConditionGroupEraStartMediumTerm": false,
+    "ProcedureOccurrenceLongTerm": true,
+    "DrugExposureLongTerm": true,
+    "DrugEraStartShortTerm": false,
+    "DistinctIngredientCountMediumTerm": false,
+    "DistinctMeasurementCountShortTerm": false,
+    "MeasurementRangeGroupLongTerm": true,
+    "ConditionGroupEraOverlapping": false,
+    "attr_fun": "getDbDefaultCovariateData",
+    "MeasurementRangeGroupMediumTerm": false,
+    "DrugGroupEraStartMediumTerm": false,
+    "MeasurementAnyTimePrior": false,
+    "MeasurementMediumTerm": false,
+    "includedCovariateIds": [],
+    "ConditionOccurrenceAnyTimePrior": false,
+    "DistinctConditionCountLongTerm": false,
+    "MeasurementValueLongTerm": true,
+    "DrugEraShortTerm": false,
+    "DrugGroupEraAnyTimePrior": false,
+    "DrugEraOverlapping": false,
+    "ConditionOccurrencePrimaryInpatientAnyTimePrior": false,
+    "ConditionEraMediumTerm": false,
+    "ConditionEraOverlapping": false,
+    "ConditionEraStartShortTerm": false,
+    "ObservationAnyTimePrior": false,
+    "VisitConceptCountShortTerm": false,
+    "DemographicsEthnicity": true,
+    "DistinctIngredientCountLongTerm": false,
+    "ConditionOccurrencePrimaryInpatientShortTerm": false,
+    "DemographicsAgeGroup": true,
+    "DistinctProcedureCountShortTerm": false,
+    "DistinctObservationCountMediumTerm": false,
+    "includedCovariateConceptIds": [],
+    "DrugGroupEraStartShortTerm": false,
+    "addDescendantsToExclude": false,
+    "DrugEraLongTerm": true,
+    "DistinctConditionCountShortTerm": false,
+    "ConditionGroupEraShortTerm": false,
+    "ConditionEraStartMediumTerm": false,
+    "VisitCountLongTerm": false,
+    "DemographicsRace": true,
+    "ProcedureOccurrenceAnyTimePrior": false,
+    "DistinctObservationCountLongTerm": false,
+    "attr_class": "covariateSettings",
+    "ProcedureOccurrenceMediumTerm": false,
+    "CharlsonIndex": true,
+    "DemographicsPriorObservationTime": false,
+    "MeasurementShortTerm": false,
+    "DistinctProcedureCountMediumTerm": false,
+    "ConditionEraLongTerm": true,
+    "DrugGroupEraStartLongTerm": false,
+    "DemographicsGender": true,
+    "DeviceExposureAnyTimePrior": false,
+    "ObservationLongTerm": true,
+    "DemographicsIndexYearMonth": false,
+    "ConditionOccurrenceMediumTerm": false,
+    "longTermStartDays": -5840,
+    "DemographicsAge": true,
+    "DrugGroupEraOverlapping": true,
+    "DistinctMeasurementCountLongTerm": false,
+    "MeasurementRangeGroupAnyTimePrior": false,
+    "DistinctConditionCountMediumTerm": false,
+    "DrugGroupEraMediumTerm": false,
+    "ProcedureOccurrenceShortTerm": false,
+    "ObservationMediumTerm": false,
+    "ConditionGroupEraAnyTimePrior": false,
+    "Chads2": true,
+    "DrugExposureAnyTimePrior": false,
+    "DeviceExposureLongTerm": true,
+    "DemographicsTimeInCohort": false,
+    "DistinctMeasurementCountMediumTerm": false,
+    "MeasurementValueShortTerm": false,
+    "DeviceExposureMediumTerm": false,
+    "ConditionGroupEraStartShortTerm": false,
+    "ConditionOccurrencePrimaryInpatientMediumTerm": false,
+    "MeasurementLongTerm": true,
+    "DemographicsIndexYear": false,
+    "MeasurementValueMediumTerm": false,
+    "DrugEraStartMediumTerm": false,
+    "MeasurementValueAnyTimePrior": false,
+    "DistinctObservationCountShortTerm": false,
+    "DrugEraMediumTerm": false,
+    "ConditionGroupEraLongTerm": true,
+    "DrugExposureShortTerm": false,
+    "DistinctIngredientCountShortTerm": false,
+    "DeviceExposureShortTerm": false,
+    "mediumTermStartDays": -180,
+    "DemographicsPostObservationTime": false,
+    "VisitConceptCountLongTerm": false,
+    "VisitConceptCountMediumTerm": false,
+    "excludedCovariateConceptIds": [],
+    "ConditionGroupEraMediumTerm": false,
+    "DrugExposureMediumTerm": false,
+    "DistinctProcedureCountLongTerm": false,
+    "DrugEraAnyTimePrior": false,
+    "endDays": -3650,
+    "ConditionOccurrenceShortTerm": false
+  }],
+  "modifiedBy": null,
+  "conceptSets": [],
+  "id": 3,
+  "packageName": "ADRandomForestJune2022"
+}

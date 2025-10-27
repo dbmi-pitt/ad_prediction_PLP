@@ -1,0 +1,144 @@
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction		Patient-Level Prediction Package version 4.3.1
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction		AnalysisID:         Analysis_1
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction		CohortID:           21
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction		OutcomeID:          33
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction		Cohort size:        243268
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction		Covariates:         20931
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction		Population size:    131395
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction		Cases:              19473
+2022-06-22 12:13:46	[Main thread]	WARN	PatientLevelPrediction	personSplitter	deprecatedWarning: 'personSplitter' is deprecated. Use 'randomSplitter' instead. See help("Deprecated") 
+2022-06-22 12:13:46	[Main thread]	INFO	PatientLevelPrediction	randomSplitter	Creating a 25% test and 75% train (into 5 folds) random stratified split by class
+2022-06-22 12:13:47	[Main thread]	INFO	PatientLevelPrediction	randomSplitter	Data split into 32848 test cases and 98547 train cases (19710, 19710, 19709, 19709, 19709)
+2022-06-22 12:13:47	[Main thread]	INFO	PatientLevelPrediction		Training Random forest model
+2022-06-22 12:13:55	[Main thread]	INFO	FeatureExtraction	tidyCovariateData	Removing 3 redundant covariates
+2022-06-22 12:13:55	[Main thread]	INFO	FeatureExtraction	tidyCovariateData	Removing 17075 infrequent covariates
+2022-06-22 12:13:55	[Main thread]	INFO	FeatureExtraction	tidyCovariateData	Normalizing covariates
+2022-06-22 12:14:30	[Main thread]	INFO	FeatureExtraction	tidyCovariateData	Tidying covariates took 43.1 secs
+2022-06-22 12:17:22	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 4mtry:  obtained AUC of 0.718540219212496
+2022-06-22 12:17:37	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 4mtry:  obtained AUC of 0.716376292931317
+2022-06-22 12:17:53	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 4mtry:  obtained AUC of 0.715275015334554
+2022-06-22 12:18:35	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 4mtry:  obtained AUC of 0.720373001553521
+2022-06-22 12:19:01	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 4mtry:  obtained AUC of 0.678663365408301
+2022-06-22 12:19:16	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 4mtry:  obtained AUC of 0.657913581467312
+2022-06-22 12:19:33	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 4mtry:  obtained AUC of 0.662672598940225
+2022-06-22 12:20:12	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 4mtry:  obtained AUC of 0.681312849318998
+2022-06-22 12:20:39	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 4mtry:  obtained AUC of 0.705690729332671
+2022-06-22 12:20:53	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 4mtry:  obtained AUC of 0.704686577862475
+2022-06-22 12:21:09	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 4mtry:  obtained AUC of 0.707444692640055
+2022-06-22 12:21:51	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 4mtry:  obtained AUC of 0.705565077698175
+2022-06-22 12:22:23	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 4mtry:  obtained AUC of 0.722930861498416
+2022-06-22 12:22:39	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 4mtry:  obtained AUC of 0.715280665540976
+2022-06-22 12:22:55	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 4mtry:  obtained AUC of 0.719662453226631
+2022-06-22 12:23:43	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 4mtry:  obtained AUC of 0.725635856423619
+2022-06-22 12:24:17	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 4mtry:  obtained AUC of 0.724093951635534
+2022-06-22 12:24:33	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 4mtry:  obtained AUC of 0.718065711174638
+2022-06-22 12:24:50	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 4mtry:  obtained AUC of 0.717283661267868
+2022-06-22 12:25:43	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 4mtry:  obtained AUC of 0.725414477143715
+2022-06-22 12:26:22	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 10mtry:  obtained AUC of 0.750189121634016
+2022-06-22 12:26:37	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 10mtry:  obtained AUC of 0.748436978513671
+2022-06-22 12:26:55	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 10mtry:  obtained AUC of 0.748526170941251
+2022-06-22 12:28:03	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 10mtry:  obtained AUC of 0.751227434544205
+2022-06-22 12:28:33	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 10mtry:  obtained AUC of 0.692915810839569
+2022-06-22 12:28:49	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 10mtry:  obtained AUC of 0.683838444684716
+2022-06-22 12:29:06	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 10mtry:  obtained AUC of 0.688812990574153
+2022-06-22 12:29:53	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 10mtry:  obtained AUC of 0.694715947679463
+2022-06-22 12:30:28	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 10mtry:  obtained AUC of 0.72720811587917
+2022-06-22 12:30:43	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 10mtry:  obtained AUC of 0.730068791650553
+2022-06-22 12:31:00	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 10mtry:  obtained AUC of 0.728258553445521
+2022-06-22 12:31:57	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 10mtry:  obtained AUC of 0.726845206963024
+2022-06-22 12:32:43	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 10mtry:  obtained AUC of 0.76358168020205
+2022-06-22 12:33:00	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 10mtry:  obtained AUC of 0.755201524395834
+2022-06-22 12:33:19	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 10mtry:  obtained AUC of 0.759474083322117
+2022-06-22 12:34:40	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 10mtry:  obtained AUC of 0.763915585214696
+2022-06-22 12:35:40	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 10mtry:  obtained AUC of 0.769718592721614
+2022-06-22 12:35:58	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 10mtry:  obtained AUC of 0.768183306350562
+2022-06-22 12:36:20	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 10mtry:  obtained AUC of 0.768914658970726
+2022-06-22 12:38:06	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 10mtry:  obtained AUC of 0.769788749655164
+2022-06-22 12:39:16	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 17mtry:  obtained AUC of 0.770886297153168
+2022-06-22 12:39:35	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 17mtry:  obtained AUC of 0.769197784313179
+2022-06-22 12:40:00	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 17mtry:  obtained AUC of 0.769692468163925
+2022-06-22 12:42:05	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 17mtry:  obtained AUC of 0.771115430682717
+2022-06-22 12:42:39	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 17mtry:  obtained AUC of 0.704823126556689
+2022-06-22 12:42:55	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 17mtry:  obtained AUC of 0.699565759980778
+2022-06-22 12:43:12	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 17mtry:  obtained AUC of 0.704032298723462
+2022-06-22 12:44:07	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 17mtry:  obtained AUC of 0.706473785786991
+2022-06-22 12:44:57	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 17mtry:  obtained AUC of 0.744565488808403
+2022-06-22 12:45:13	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 17mtry:  obtained AUC of 0.745403825440153
+2022-06-22 12:45:34	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 17mtry:  obtained AUC of 0.744770670748341
+2022-06-22 12:46:58	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 17mtry:  obtained AUC of 0.744389942922978
+2022-06-22 12:48:34	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 17mtry:  obtained AUC of 0.784849396876161
+2022-06-22 12:48:55	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 17mtry:  obtained AUC of 0.782505304297467
+2022-06-22 12:49:25	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 17mtry:  obtained AUC of 0.783415843992844
+2022-06-22 12:52:22	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 17mtry:  obtained AUC of 0.784896939117526
+2022-06-22 12:54:40	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 17mtry:  obtained AUC of 0.791006579827287
+2022-06-22 12:55:07	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 17mtry:  obtained AUC of 0.789118395772716
+2022-06-22 12:55:46	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 17mtry:  obtained AUC of 0.79047116220537
+2022-06-22 13:00:11	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 17mtry:  obtained AUC of 0.791080203803202
+2022-06-22 13:02:14	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 25mtry:  obtained AUC of 0.782987644482291
+2022-06-22 13:02:38	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 25mtry:  obtained AUC of 0.780193298479988
+2022-06-22 13:03:14	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 25mtry:  obtained AUC of 0.781096197712895
+2022-06-22 13:07:06	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 25mtry:  obtained AUC of 0.783259792012867
+2022-06-22 13:07:47	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 25mtry:  obtained AUC of 0.714511119988784
+2022-06-22 13:08:04	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 25mtry:  obtained AUC of 0.71256665777386
+2022-06-22 13:08:22	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 25mtry:  obtained AUC of 0.713585440480895
+2022-06-22 13:09:31	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 25mtry:  obtained AUC of 0.71624083235249
+2022-06-22 13:10:43	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 25mtry:  obtained AUC of 0.755863568796146
+2022-06-22 13:11:03	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 25mtry:  obtained AUC of 0.755673550731228
+2022-06-22 13:11:28	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 25mtry:  obtained AUC of 0.755673631075582
+2022-06-22 13:13:40	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 25mtry:a  obtained AUC of 0.755576631787084
+2022-06-22 13:16:49	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 25mtry:  obtained AUC of 0.795640690380361
+2022-06-22 13:17:22	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 25mtry:  obtained AUC of 0.793563633881623
+2022-06-22 13:18:11	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 25mtry:  obtained AUC of 0.79453398484964
+2022-06-22 13:24:43	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 25mtry:  obtained AUC of 0.79550030024727
+2022-06-22 13:30:22	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 25mtry:  obtained AUC of 0.800140005948421
+2022-06-22 13:31:11	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 25mtry:  obtained AUC of 0.798364642494437
+2022-06-22 13:32:31	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 25mtry:  obtained AUC of 0.799582230980952
+2022-06-22 13:43:19	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 25mtry:  obtained AUC of 0.800162475449817
+2022-06-22 13:49:11	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 50mtry:  obtained AUC of 0.790656972999519
+2022-06-22 13:50:03	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 50mtry:  obtained AUC of 0.787785022917027
+2022-06-22 13:51:27	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 50mtry:  obtained AUC of 0.788796329113014
+2022-06-22 14:02:30	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 50mtry:  obtained AUC of 0.790983698000311
+2022-06-22 14:03:56	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 50mtry:  obtained AUC of 0.731175125639605
+2022-06-22 14:04:17	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 50mtry:  obtained AUC of 0.727644013357518
+2022-06-22 14:04:45	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 50mtry:  obtained AUC of 0.729067166745146
+2022-06-22 14:07:36	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 50mtry:  obtained AUC of 0.731761909404672
+2022-06-22 14:10:42	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 50mtry:  obtained AUC of 0.769675059948924
+2022-06-22 14:11:15	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 50mtry:  obtained AUC of 0.769603011456431
+2022-06-22 14:12:06	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 50mtry:  obtained AUC of 0.769800826594121
+2022-06-22 14:18:18	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 50mtry:  obtained AUC of 0.769990923779885
+2022-06-22 14:28:33	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 50mtry:  obtained AUC of 0.797254364698821
+2022-06-22 14:29:55	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 50mtry:  obtained AUC of 0.793458360756106
+2022-06-22 14:32:14	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 50mtry:  obtained AUC of 0.795500558817415
+2022-06-22 14:51:07	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 50mtry:  obtained AUC of 0.79743809021034
+2022-06-22 15:07:12	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:500 maxDepth: 50mtry:  obtained AUC of 0.797244993773972
+2022-06-22 15:09:10	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:50 maxDepth: 50mtry:  obtained AUC of 0.794030116456646
+2022-06-22 15:12:32	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:100 maxDepth: 50mtry:  obtained AUC of 0.796192975830134
+2022-06-22 15:45:22	[Main thread]	INFO	PatientLevelPrediction	fitRandomForest	Model with settings: ntrees:1000 maxDepth: 50mtry:  obtained AUC of 0.797295083787796
+2022-06-22 15:48:17	[Main thread]	INFO	PatientLevelPrediction	limitCovariatesToPopulation	Starting to limit covariate data to population...
+2022-06-22 15:48:29	[Main thread]	INFO	PatientLevelPrediction	limitCovariatesToPopulation	Finished limiting covariate data to population...
+2022-06-22 15:48:36	[Main thread]	INFO	PatientLevelPrediction	predict.pythonReticulate	Mapping covariates...
+2022-06-22 15:48:48	[Main thread]	INFO	PatientLevelPrediction	predict.pythonReticulate	Executing prediction...
+2022-06-22 15:48:51	[Main thread]	INFO	PatientLevelPrediction	predict.pythonReticulate	Returning results...
+2022-06-22 15:48:51	[Main thread]	INFO	PatientLevelPrediction		Train set evaluation
+2022-06-22 15:48:52	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	AUC:                84.62
+2022-06-22 15:48:52	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	AUPRC:              67.73
+2022-06-22 15:48:52	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Brier:              0.08
+2022-06-22 15:48:57	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Calibration in large- Mean predicted risk 0.1482 : observed risk 0.1482
+2022-06-22 15:48:58	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Weak calibration intercept: 0 - gradient:1.1362
+2022-06-22 15:48:58	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Hosmer-Lemeshow calibration gradient: 1.37 intercept:         -0.05
+2022-06-22 15:49:01	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Average Precision:  0.68
+2022-06-22 15:49:01	[Main thread]	INFO	PatientLevelPrediction		Test set evaluation
+2022-06-22 15:49:01	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	AUC:                80.37
+2022-06-22 15:49:01	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	AUPRC:              54.60
+2022-06-22 15:49:01	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Brier:              0.09
+2022-06-22 15:49:03	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Calibration in large- Mean predicted risk 0.1482 : observed risk 0.1482
+2022-06-22 15:49:03	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Weak calibration intercept: -3e-04 - gradient:1.0571
+2022-06-22 15:49:03	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Hosmer-Lemeshow calibration gradient: 1.14 intercept:         -0.02
+2022-06-22 15:49:04	[Main thread]	INFO	PatientLevelPrediction	evaluatePlp	Average Precision:  0.55
+2022-06-22 15:49:04	[Main thread]	INFO	PatientLevelPrediction		Calculating covariate summary @ 2022-06-22 15:49:04
+2022-06-22 15:49:04	[Main thread]	INFO	PatientLevelPrediction		This can take a while...
+2022-06-22 15:49:48	[Main thread]	INFO	PatientLevelPrediction		Finished covariate summary @ 2022-06-22 15:49:48
+2022-06-22 15:49:48	[Main thread]	INFO	PatientLevelPrediction		Saving PlpResult
+2022-06-22 15:49:50	[Main thread]	INFO	PatientLevelPrediction		plpResult saved to ..\/home/sanya/Atlas_packages/ADRandomForestJune2022/AD-out/Analysis_1\plpResult
+2022-06-22 15:49:50	[Main thread]	INFO	PatientLevelPrediction		Log saved to /home/sanya/Atlas_packages/ADRandomForestJune2022/AD-out/Analysis_1/plplog.txt
+2022-06-22 15:49:50	[Main thread]	INFO	PatientLevelPrediction		Run finished successfully.
